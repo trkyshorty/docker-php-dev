@@ -1,0 +1,7 @@
+[mysqld]
+query_cache_size=0
+query_cache_type=0
+join_buffer_size=2M
+performance_schema=ON
+innodb_buffer_pool_size=512M
+innodb_log_file_size=128M
