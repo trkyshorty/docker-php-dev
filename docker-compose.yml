@@ -42,7 +42,7 @@ services:
         command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
     mysql:
-        image: mariadb
+        image: mariadb:10.7.3
         restart: always
         volumes:
             - ./bucket/services/mysql/conf.d:/etc/mysql/conf.d
